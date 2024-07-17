@@ -20,7 +20,7 @@ const Searching = () => {
 
   const saveList=async()=>{
     setListtosave(filteredData);
-    let res = await axios.post("http://localhost:5000/api/auth/listdata",filteredData)
+    let res = await axios.post("https://mern-project-gpdk.onrender.com/api/auth/listdata",filteredData)
     console.log(res);
   }
 console.log(listtosave,'gjk');

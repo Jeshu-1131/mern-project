@@ -14,7 +14,7 @@ const RegisterForm = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/signup", {
+      const response = await axios.post("https://mern-project-gpdk.onrender.com/api/auth/signup", {
         fullname,
         username,
         password

@@ -6,7 +6,7 @@ const SavedList=()=>{
 
     const handleDelete=async()=>{
         try{
-            await fetch('http://localhost:5000/api/auth/deleteitem',{
+            await fetch('https://mern-project-gpdk.onrender.com/api/auth/deleteitem',{
                 method:'DELETE',
             })
             setData([]);
@@ -15,7 +15,7 @@ const SavedList=()=>{
         }
     }
     useEffect(()=>{
-        fetch("http://localhost:5000/api/auth/getlist").then(res=>res.json()).then(data=>setData(data));
+        fetch("https://mern-project-gpdk.onrender.com/api/auth/getlist").then(res=>res.json()).then(data=>setData(data));
     },[])
     console.log(data)
     return(
